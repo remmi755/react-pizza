@@ -1,4 +1,5 @@
 import React from "react";
+import LogoSVG from '../assets/img/pizza-logo.svg'
 
 function Header() {
     return (
@@ -7,7 +8,7 @@ function Header() {
                 <div className="header__logo">
                     <img
                         width="38"
-                        src="./img/pizza-logo.svg"
+                        src={LogoSVG}
                         alt="Pizza logo"
                     />
                     <div>
