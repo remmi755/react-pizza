@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2049fa-73bc-40cd-8723-c5e46e776f2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-top.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/empty-cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/grey-arrow-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/pizza-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/plus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/trash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/pizzas.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PizzaBlock/Skeleton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Categories.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pizzas.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sort.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sort.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +39,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/components/PizzaBlock.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Categories.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Sort.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -68,7 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PizzaBlock" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -82,11 +78,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\components\PizzaBlock" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\assets" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\ejs" />
-      <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\public\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -104,7 +100,8 @@
       <workItem from="1667847974983" duration="388000" />
       <workItem from="1667890119165" duration="15284000" />
       <workItem from="1667912394516" duration="7259000" />
-      <workItem from="1667929840902" duration="4602000" />
+      <workItem from="1667929840902" duration="5018000" />
+      <workItem from="1668000795603" duration="12633000" />
     </task>
     <servers />
   </component>
