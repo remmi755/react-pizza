@@ -3,9 +3,13 @@ import React, {useState} from 'react'
 function Sort({ sortValue, onChangeSort }) {
     const [openPopup, setOpenPopup] = useState(false)
     const listPopup = [
-        {name:'популярности', sortProperty:'rating'},
-        {name:'цене', sortProperty: 'price'},
-        {name:'алфавиту', sortProperty: 'title'}]
+        {name:'популярности (DESC)', sortProperty:'rating'},
+        {name:'популярности (ASC)', sortProperty:'-rating'},
+        {name:'цене (DESC)', sortProperty: 'price'},
+        {name:'цене (ASC)', sortProperty: '-price'},
+        {name:'алфавиту (DESC)', sortProperty: 'title'},
+        {name:'алфавиту (ASC)', sortProperty: '-title'}
+    ]
 
     const onClickPopup = (i) => {
         onChangeSort(i)
