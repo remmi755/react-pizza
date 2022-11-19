@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="df2049fa-73bc-40cd-8723-c5e46e776f2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pagination/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/slices/filrerSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/filrerSlice.js" afterDir="false" />
     </list>
@@ -126,7 +125,11 @@
       <workItem from="1668604795125" duration="3913000" />
       <workItem from="1668672234385" duration="10211000" />
       <workItem from="1668694493557" duration="3198000" />
-      <workItem from="1668704742925" duration="3477000" />
+      <workItem from="1668704742925" duration="4161000" />
+      <workItem from="1668761579928" duration="755000" />
+      <workItem from="1668780755854" duration="595000" />
+      <workItem from="1668792416547" duration="985000" />
+      <workItem from="1668866672238" duration="1732000" />
     </task>
     <servers />
   </component>
