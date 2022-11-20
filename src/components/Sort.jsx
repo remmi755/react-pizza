@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setSort } from '../redux/slices/filrerSlice'
 
-const listPopup = [
+export const listPopup = [
     {name:'популярности (DESC)', sortProperty:'rating'},
     {name:'популярности (ASC)', sortProperty:'-rating'},
     {name:'цене (DESC)', sortProperty: 'price'},
