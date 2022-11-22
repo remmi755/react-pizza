@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState, useRef } from 'react'
-import axios from 'axios'
 import qs from 'qs'
 import { useNavigate } from 'react-router-dom'
 
@@ -7,7 +6,6 @@ import { SearchContext } from '../App'
 import { useSelector, useDispatch } from 'react-redux'
 import { setCurrentPage, setFilters } from '../redux/slices/filrerSlice'
 import { fetchPizzas } from '../redux/slices/pizzaSlice'
-
 
 import Categories from '../components/Categories'
 import Sort from '../components/Sort'
@@ -24,30 +22,25 @@ const Home = () => {
     const { categoryId, sort, currentPage } = useSelector(
         (state) => state.filter
     )
-    const items  = useSelector(
-        (state) => state.pizza.items
-    )
-
-
+    const { items, status } = useSelector((state) => state.pizza)
     const { searchValue } = useContext(SearchContext)
-    const [isLoading, setIsLoading] = useState(true)
 
     const getPizzas = async () => {
-        setIsLoading(true)
         const sortBy = sort.sortProperty.replace('-', '')
         const order = sort.sortProperty.includes('-') ? 'asc' : 'desc'
         const category = categoryId > 0 ? `category=${categoryId}` : ''
         const search = searchValue ? `&search=${searchValue}` : ''
 
-        try {
-            dispatch(fetchPizzas({
-                sortBy, order, category, search, currentPage
-            }))
-        } catch (error) {
-            console.log('ERROR', error)
-        } finally {
-            setIsLoading(false)
-        }
+        dispatch(
+            fetchPizzas({
+                sortBy,
+                order,
+                category,
+                search,
+                currentPage,
+            })
+        )
+        window.scrollTo(0, 0)
     }
 
     useEffect(() => {
@@ -108,9 +101,22 @@ const Home = () => {
                 <Sort />
             </div>
             <h2 className="content__title">Все пиццы</h2>
-            <div className="content__items">
-                {isLoading ? skeletons : pizzas}
-            </div>
+            {status === 'error' ? (
+                <div className="content__error-info">
+                    <h2>
+                        Произошла ошибка <icon>😕</icon>
+                    </h2>
+                    <p>
+                        К сожалению не удалось получить пиццы
+                        <br />
+                        Попробуйте повторить попытку позже.
+                    </p>
+                </div>
+            ) : (
+                <div className="content__items">
+                    {status === 'loading' ? skeletons : pizzas}
+                </div>
+            )}
             <Pagination currentPage={currentPage} onChangePage={onChangePage} />
         </div>
     )
