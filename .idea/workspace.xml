@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2049fa-73bc-40cd-8723-c5e46e776f2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/layouts/MainLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/FullPizza.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sort.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sort.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/cartSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/cartSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/filrerSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/filrerSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/src/components/CartItem.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/redux/slices/filrerSlice.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/redux/slices/counterSlice.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/FullPizza.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Header.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/CartEmpty.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/redux/slices/pizzaSlice.js" root0="FORCE_HIGHLIGHTING" />
@@ -51,6 +61,7 @@
     <setting file="file://$PROJECT_DIR$/src/redux/store.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Pagination/index.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Categories.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/layouts/MainLayout.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Sort.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -139,7 +150,12 @@
       <workItem from="1669036761476" duration="3217000" />
       <workItem from="1669104630232" duration="2000" />
       <workItem from="1669123848527" duration="8405000" />
-      <workItem from="1669137359876" duration="5070000" />
+      <workItem from="1669137359876" duration="5089000" />
+      <workItem from="1669217997948" duration="13000" />
+      <workItem from="1669221206884" duration="4866000" />
+      <workItem from="1669281142105" duration="3294000" />
+      <workItem from="1669290204038" duration="2328000" />
+      <workItem from="1669385327902" duration="5566000" />
     </task>
     <servers />
   </component>

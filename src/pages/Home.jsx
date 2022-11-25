@@ -1,11 +1,14 @@
 import React, { useContext, useEffect, useState, useRef } from 'react'
 import qs from 'qs'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
-import { SearchContext } from '../App'
 import { useSelector, useDispatch } from 'react-redux'
-import { setCurrentPage, setFilters } from '../redux/slices/filrerSlice'
-import { fetchPizzas } from '../redux/slices/pizzaSlice'
+import {
+    setCurrentPage,
+    setFilters,
+    selectFilter,
+} from '../redux/slices/filrerSlice'
+import { fetchPizzas, selectPizzaData } from '../redux/slices/pizzaSlice'
 
 import Categories from '../components/Categories'
 import Sort from '../components/Sort'
@@ -19,11 +22,9 @@ const Home = () => {
     const dispatch = useDispatch()
     const isSearch = useRef(false)
     const isMounted = useRef(false)
-    const { categoryId, sort, currentPage } = useSelector(
-        (state) => state.filter
-    )
-    const { items, status } = useSelector((state) => state.pizza)
-    const { searchValue } = useContext(SearchContext)
+    const { categoryId, sort, currentPage, searchValue } =
+        useSelector(selectFilter)
+    const { items, status } = useSelector(selectPizzaData)
 
     const getPizzas = async () => {
         const sortBy = sort.sortProperty.replace('-', '')
@@ -83,7 +84,9 @@ const Home = () => {
     }, [categoryId, sort.sortProperty, searchValue, currentPage])
 
     const pizzas = items.map((obj, index) => (
-        <PizzaBlock key={index} {...obj} />
+        <Link to={`/pizza/${obj.id}`} key={index}>
+            <PizzaBlock {...obj} />
+        </Link>
     ))
 
     const skeletons = [...new Array(6)].map((_, index) => (
