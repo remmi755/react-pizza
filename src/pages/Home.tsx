@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import qs from 'qs'
 import { useNavigate, Link } from 'react-router-dom'
 
@@ -7,6 +7,7 @@ import {
     setCurrentPage,
     setFilters,
     selectFilter,
+    setCategoryId,
 } from '../redux/slices/filrerSlice'
 import { fetchPizzas, selectPizzaData } from '../redux/slices/pizzaSlice'
 
@@ -17,14 +18,14 @@ import Skeleton from '../components/PizzaBlock/Skeleton'
 import Pagination from '../components/Pagination'
 import { listPopup } from '../components/Sort'
 
-const Home = () => {
+const Home: React.FC = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const isSearch = useRef(false)
     const isMounted = useRef(false)
-    const { categoryId, sort, currentPage, searchValue } =
-        useSelector(selectFilter)
+    const { categoryId, sort, currentPage, searchValue } = useSelector(selectFilter)
     const { items, status } = useSelector(selectPizzaData)
+    const filter = useSelector((state: any) => state.filter.categoryId)
 
     const getPizzas = async () => {
         const sortBy = sort.sortProperty.replace('-', '')
@@ -33,6 +34,7 @@ const Home = () => {
         const search = searchValue ? `&search=${searchValue}` : ''
 
         dispatch(
+            //@ts-ignore
             fetchPizzas({
                 sortBy,
                 order,
@@ -61,9 +63,7 @@ const Home = () => {
         if (window.location.search) {
             const params = qs.parse(window.location.search.substring(1))
 
-            const sort = listPopup.find(
-                (obj) => obj.sortProperty === params.sortProperty
-            )
+            const sort = listPopup.find((obj) => obj.sortProperty === params.sortProperty)
 
             dispatch(
                 setFilters({
@@ -83,31 +83,33 @@ const Home = () => {
         isSearch.current = false
     }, [categoryId, sort.sortProperty, searchValue, currentPage])
 
-    const pizzas = items.map((obj, index) => (
+    const pizzas = items.map((obj: any, index: number) => (
         <Link to={`/pizza/${obj.id}`} key={index}>
             <PizzaBlock {...obj} />
         </Link>
     ))
 
-    const skeletons = [...new Array(6)].map((_, index) => (
-        <Skeleton key={index} />
-    ))
+    const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index} />)
 
-    const onChangePage = (number) => {
-        dispatch(setCurrentPage(number))
+    const onChangePage = (page: number) => {
+        dispatch(setCurrentPage(page))
+    }
+
+    const onChangeCategory = (id: number) => {
+        dispatch(setCategoryId(id))
     }
 
     return (
-        <div className="container">
-            <div className="content__top">
-                <Categories />
+        <div className='container'>
+            <div className='content__top'>
+                <Categories onChangeCategory={onChangeCategory} value={filter} />
                 <Sort />
             </div>
-            <h2 className="content__title">Все пиццы</h2>
+            <h2 className='content__title'>Все пиццы</h2>
             {status === 'error' ? (
-                <div className="content__error-info">
+                <div className='content__error-info'>
                     <h2>
-                        Произошла ошибка <icon>😕</icon>
+                        Произошла ошибка <span>😕</span>
                     </h2>
                     <p>
                         К сожалению не удалось получить пиццы
@@ -116,9 +118,7 @@ const Home = () => {
                     </p>
                 </div>
             ) : (
-                <div className="content__items">
-                    {status === 'loading' ? skeletons : pizzas}
-                </div>
+                <div className='content__items'>{status === 'loading' ? skeletons : pizzas}</div>
             )}
             <Pagination currentPage={currentPage} onChangePage={onChangePage} />
         </div>
