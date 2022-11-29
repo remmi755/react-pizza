@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="df2049fa-73bc-40cd-8723-c5e46e776f2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pagination/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sort.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/cartSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/cartSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/counterSlice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/filrerSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortPopup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/cartSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
     <setting file="file://$PROJECT_DIR$/src/components/Pagination/index.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Categories.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/layouts/MainLayout.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/components/Sort.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/SortPopup.tsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -155,7 +156,9 @@
       <workItem from="1669562611354" duration="12137000" />
       <workItem from="1669628296252" duration="1883000" />
       <workItem from="1669650852798" duration="1394000" />
-      <workItem from="1669706912157" duration="11528000" />
+      <workItem from="1669706912157" duration="12967000" />
+      <workItem from="1669727185567" duration="6839000" />
+      <workItem from="1669739370540" duration="9310000" />
     </task>
     <servers />
   </component>

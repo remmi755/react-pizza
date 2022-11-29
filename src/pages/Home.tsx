@@ -2,25 +2,26 @@ import React, { useEffect, useRef } from 'react'
 import qs from 'qs'
 import { useNavigate, Link } from 'react-router-dom'
 
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import {
     setCurrentPage,
     setFilters,
     selectFilter,
     setCategoryId,
 } from '../redux/slices/filrerSlice'
-import { fetchPizzas, selectPizzaData } from '../redux/slices/pizzaSlice'
+import { fetchPizzas, SearchPizzaParams, selectPizzaData } from '../redux/slices/pizzaSlice'
 
 import Categories from '../components/Categories'
-import Sort from '../components/Sort'
+import Sort from '../components/SortPopup'
 import PizzaBlock from '../components/PizzaBlock'
 import Skeleton from '../components/PizzaBlock/Skeleton'
 import Pagination from '../components/Pagination'
-import { listPopup } from '../components/Sort'
+import { listPopup } from '../components/SortPopup'
+import { useAppDispatch } from '../redux/store'
 
 const Home: React.FC = () => {
     const navigate = useNavigate()
-    const dispatch = useDispatch()
+    const dispatch = useAppDispatch()
     const isSearch = useRef(false)
     const isMounted = useRef(false)
     const { categoryId, sort, currentPage, searchValue } = useSelector(selectFilter)
@@ -34,13 +35,12 @@ const Home: React.FC = () => {
         const search = searchValue ? `&search=${searchValue}` : ''
 
         dispatch(
-            //@ts-ignore
             fetchPizzas({
                 sortBy,
                 order,
                 category,
                 search,
-                currentPage,
+                currentPage: String(currentPage),
             })
         )
         window.scrollTo(0, 0)
@@ -48,27 +48,34 @@ const Home: React.FC = () => {
 
     useEffect(() => {
         if (isMounted.current) {
-            const queryString = qs.stringify({
+            const params = {
+                categoryId: categoryId > 0 ? categoryId : null,
                 sortProperty: sort.sortProperty,
-                categoryId,
                 currentPage,
-            })
+            }
+
+            const queryString = qs.stringify(params, { skipNulls: true })
 
             navigate(`?${queryString}`)
         }
-        isMounted.current = true
+        if (!window.location.search) {
+            dispatch(fetchPizzas({} as SearchPizzaParams))
+        }
     }, [categoryId, sort.sortProperty, currentPage])
 
     useEffect(() => {
         if (window.location.search) {
-            const params = qs.parse(window.location.search.substring(1))
-
-            const sort = listPopup.find((obj) => obj.sortProperty === params.sortProperty)
+            const params = qs.parse(
+                window.location.search.substring(1)
+            ) as unknown as SearchPizzaParams
+            const sort = listPopup.find((obj) => obj.sortProperty === params.sortBy)
 
             dispatch(
                 setFilters({
-                    ...params,
-                    sort,
+                    searchValue: params.search,
+                    categoryId: Number(params.category),
+                    currentPage: Number(params.currentPage),
+                    sort: sort || listPopup[0],
                 })
             )
             isSearch.current = true
