@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="df2049fa-73bc-40cd-8723-c5e46e776f2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortPopup.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/cartSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +36,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/redux/slices/cartSlice.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/components/CartItem.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/CartItemBlock.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/pages/FullPizza.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Header.tsx" root0="FORCE_HIGHLIGHTING" />
@@ -158,7 +152,8 @@
       <workItem from="1669650852798" duration="1394000" />
       <workItem from="1669706912157" duration="12967000" />
       <workItem from="1669727185567" duration="6839000" />
-      <workItem from="1669739370540" duration="9310000" />
+      <workItem from="1669739370540" duration="9863000" />
+      <workItem from="1669789650436" duration="883000" />
     </task>
     <servers />
   </component>
