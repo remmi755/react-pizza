@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2049fa-73bc-40cd-8723-c5e46e776f2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/filter/selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/filter/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/pizza/asinkActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/pizza/selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/pizza/slice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/pizza/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/calcTotalPrice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/getCartFromLS.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartItemBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItemBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Categories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Categories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SortPopup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortPopup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/filter/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +43,7 @@
         <option value="SCSS File" />
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -34,14 +59,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/redux/slices/cartSlice.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/CartItemBlock.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/pages/FullPizza.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Header.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/CartEmpty.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/redux/slices/pizzaSlice.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Search/index.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/pages/NotFound.tsx" root0="FORCE_HIGHLIGHTING" />
@@ -74,7 +96,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -89,11 +111,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\redux" />
+      <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\redux\slices\cart" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\components\NotFoundBlock" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\components\PizzaBlock" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\assets" />
-      <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src" />
-      <recent name="D:\Downloads\Computer-science\MyProject\react-pizza" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -153,7 +175,11 @@
       <workItem from="1669706912157" duration="12967000" />
       <workItem from="1669727185567" duration="6839000" />
       <workItem from="1669739370540" duration="9863000" />
-      <workItem from="1669789650436" duration="883000" />
+      <workItem from="1669789650436" duration="934000" />
+      <workItem from="1669816787714" duration="2663000" />
+      <workItem from="1669825757665" duration="7438000" />
+      <workItem from="1669889939982" duration="6339000" />
+      <workItem from="1669914372052" duration="4272000" />
     </task>
     <servers />
   </component>

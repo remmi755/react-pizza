@@ -1,15 +1,18 @@
 import React, { useEffect, useRef } from 'react'
 import qs from 'qs'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import { useSelector } from 'react-redux'
 import {
     setCurrentPage,
     setFilters,
-    selectFilter,
     setCategoryId,
-} from '../redux/slices/filrerSlice'
-import { fetchPizzas, SearchPizzaParams, selectPizzaData } from '../redux/slices/pizzaSlice'
+} from '../redux/filter/slice'
+
+import { selectFilter } from '../redux/filter/selectors'
+import { fetchPizzas } from '../redux/pizza/asinkActions'
+import { SearchPizzaParams } from '../redux/pizza/types'
+import { selectPizzaData } from '../redux/pizza/selectors'
 
 import Categories from '../components/Categories'
 import Sort from '../components/SortPopup'
@@ -90,7 +93,7 @@ const Home: React.FC = () => {
         isSearch.current = false
     }, [categoryId, sort.sortProperty, searchValue, currentPage])
 
-    const pizzas = items.map((obj: any, index: number) => <PizzaBlock key={index} {...obj} />)
+    const pizzas = items.map((obj: any, index: number) => <PizzaBlock key={obj.id} {...obj} />)
 
     const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index} />)
 
@@ -98,15 +101,15 @@ const Home: React.FC = () => {
         dispatch(setCurrentPage(page))
     }
 
-    const onChangeCategory = (id: number) => {
+    const onChangeCategory =React.useCallback( (id: number) => {
         dispatch(setCategoryId(id))
-    }
+    }, [])
 
     return (
         <div className='container'>
             <div className='content__top'>
                 <Categories onChangeCategory={onChangeCategory} value={filter} />
-                <Sort />
+                <Sort value={sort}/>
             </div>
             <h2 className='content__title'>Все пиццы</h2>
             {status === 'error' ? (
