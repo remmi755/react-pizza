@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2049fa-73bc-40cd-8723-c5e46e776f2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/cart/selectors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/cart/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/filter/selectors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/filter/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/pizza/asinkActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/pizza/selectors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/pizza/slice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/pizza/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/calcTotalPrice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getCartFromLS.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartItemBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItemBlock.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Categories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Categories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SortPopup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortPopup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/filrerSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/filter/slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/pizzaSlice.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +156,7 @@
       <workItem from="1669816787714" duration="2663000" />
       <workItem from="1669825757665" duration="7438000" />
       <workItem from="1669889939982" duration="6339000" />
-      <workItem from="1669914372052" duration="4272000" />
+      <workItem from="1669914372052" duration="7041000" />
     </task>
     <servers />
   </component>

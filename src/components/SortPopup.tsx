@@ -85,4 +85,6 @@ const SortPopup: React.FC<SortPopupProps> = React.memo(({ value }) => {
         </div>
     )
 })
+
+SortPopup.displayName = 'SortPopup'
 export default SortPopup

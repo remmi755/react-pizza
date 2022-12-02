@@ -49,41 +49,41 @@ const Home: React.FC = () => {
         window.scrollTo(0, 0)
     }
 
-    // useEffect(() => {
-    //     if (isMounted.current) {
-    //         const params = {
-    //             categoryId: categoryId > 0 ? categoryId : null,
-    //             sortProperty: sort.sortProperty,
-    //             currentPage,
-    //         }
-    //
-    //         const queryString = qs.stringify(params, { skipNulls: true })
-    //
-    //         navigate(`?${queryString}`)
-    //     }
-    //     if (!window.location.search) {
-    //         dispatch(fetchPizzas({} as SearchPizzaParams))
-    //     }
-    // }, [categoryId, sort.sortProperty, currentPage])
+    useEffect(() => {
+        if (isMounted.current) {
+            const params = {
+                categoryId: categoryId > 0 ? categoryId : null,
+                sortProperty: sort.sortProperty,
+                currentPage,
+            }
 
-    // useEffect(() => {
-    //     if (window.location.search) {
-    //         const params = qs.parse(
-    //             window.location.search.substring(1)
-    //         ) as unknown as SearchPizzaParams
-    //         const sort = listPopup.find((obj) => obj.sortProperty === params.sortBy)
-    //
-    //         dispatch(
-    //             setFilters({
-    //                 searchValue: params.search,
-    //                 categoryId: Number(params.category),
-    //                 currentPage: Number(params.currentPage),
-    //                 sort: sort || listPopup[0],
-    //             })
-    //         )
-    //         isSearch.current = true
-    //     }
-    // }, [])
+            const queryString = qs.stringify(params, { skipNulls: true })
+
+            navigate(`?${queryString}`)
+        }
+        if (!window.location.search) {
+            dispatch(fetchPizzas({} as SearchPizzaParams))
+        }
+    }, [categoryId, sort.sortProperty, currentPage])
+
+    useEffect(() => {
+        if (window.location.search) {
+            const params = qs.parse(
+                window.location.search.substring(1)
+            ) as unknown as SearchPizzaParams
+            const sort = listPopup.find((obj) => obj.sortProperty === params.sortBy)
+
+            dispatch(
+                setFilters({
+                    searchValue: params.search,
+                    categoryId: Number(params.category),
+                    currentPage: Number(params.currentPage),
+                    sort: sort || listPopup[0],
+                })
+            )
+            isSearch.current = true
+        }
+    }, [])
 
     useEffect(() => {
         window.scrollTo(0, 0)
