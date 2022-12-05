@@ -27,4 +27,5 @@ const Categories: React.FC<CategoriesProps> = React.memo(({ value, onChangeCateg
     )
 })
 
+Categories.displayName = 'Categories'
 export default Categories

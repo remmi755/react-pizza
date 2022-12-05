@@ -1,10 +1,8 @@
 import React from 'react'
-import clsx from 'clsx'
 
 import { useDispatch } from 'react-redux'
 import { CartItem } from '../redux/cart/types'
 import { addItem, removeItem, minusItem } from '../redux/cart/slice'
-
 
 type CartItemProps = {
     id: string
@@ -16,7 +14,15 @@ type CartItemProps = {
     size: number
 }
 
-const CartItemBlock: React.FC<CartItemProps> = ({ id, title, type, price, count, imageUrl, size }) => {
+const CartItemBlock: React.FC<CartItemProps> = ({
+    id,
+    title,
+    type,
+    price,
+    count,
+    imageUrl,
+    size,
+}) => {
     const dispatch = useDispatch()
 
     const onClickPlus = () => {
@@ -120,4 +126,4 @@ const CartItemBlock: React.FC<CartItemProps> = ({ id, title, type, price, count,
     )
 }
 
-export default CartItemBlock;
+export default CartItemBlock

@@ -1,4 +1,3 @@
-import React from 'react'
 import { CartItem } from '../redux/cart/types'
 import { calcTotalPrice } from './calcTotalPrice'
 

@@ -3,16 +3,12 @@ import qs from 'qs'
 import { useNavigate } from 'react-router-dom'
 
 import { useSelector } from 'react-redux'
-import {
-    setCurrentPage,
-    setFilters,
-    setCategoryId,
-} from '../redux/filter/slice'
-
+import { setCurrentPage, setFilters, setCategoryId } from '../redux/filter/slice'
 import { selectFilter } from '../redux/filter/selectors'
 import { fetchPizzas } from '../redux/pizza/asinkActions'
 import { SearchPizzaParams } from '../redux/pizza/types'
 import { selectPizzaData } from '../redux/pizza/selectors'
+import { useAppDispatch } from '../redux/store'
 
 import Categories from '../components/Categories'
 import Sort from '../components/SortPopup'
@@ -20,7 +16,6 @@ import PizzaBlock from '../components/PizzaBlock'
 import Skeleton from '../components/PizzaBlock/Skeleton'
 import Pagination from '../components/Pagination'
 import { listPopup } from '../components/SortPopup'
-import { useAppDispatch } from '../redux/store'
 
 const Home: React.FC = () => {
     const navigate = useNavigate()
@@ -101,7 +96,7 @@ const Home: React.FC = () => {
         dispatch(setCurrentPage(page))
     }
 
-    const onChangeCategory =React.useCallback( (id: number) => {
+    const onChangeCategory = React.useCallback((id: number) => {
         dispatch(setCategoryId(id))
     }, [])
 
@@ -109,7 +104,7 @@ const Home: React.FC = () => {
         <div className='container'>
             <div className='content__top'>
                 <Categories onChangeCategory={onChangeCategory} value={filter} />
-                <Sort value={sort}/>
+                <Sort value={sort} />
             </div>
             <h2 className='content__title'>Все пиццы</h2>
             {status === 'error' ? (

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2049fa-73bc-40cd-8723-c5e46e776f2d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/math.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SortPopup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortPopup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartItemBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItemBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Categories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Categories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FullPizza.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FullPizza.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/cart/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/pizza/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/pizza/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/getCartFromLS.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getCartFromLS.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +79,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -88,11 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\utils" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\redux" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\redux\slices\cart" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\components\NotFoundBlock" />
       <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\components\PizzaBlock" />
-      <recent name="D:\Downloads\Computer-science\MyProject\react-pizza\src\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -157,6 +163,14 @@
       <workItem from="1669825757665" duration="7438000" />
       <workItem from="1669889939982" duration="6339000" />
       <workItem from="1669914372052" duration="7041000" />
+      <workItem from="1669968033080" duration="594000" />
+      <workItem from="1669983573867" duration="5329000" />
+      <workItem from="1670063277598" duration="1244000" />
+      <workItem from="1670087904294" duration="12000" />
+      <workItem from="1670175707019" duration="2513000" />
+      <workItem from="1670232734627" duration="4000" />
+      <workItem from="1670233140983" duration="1937000" />
+      <workItem from="1670250152243" duration="1878000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,6 @@
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit'
-import axios from 'axios'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { fetchPizzas } from './asinkActions'
 import { Pizza, PizzaSliceState, Status } from './types'
-
-
 
 const initialState: PizzaSliceState = {
     items: [],
