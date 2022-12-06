@@ -5,9 +5,7 @@ import './scss/app.scss'
 
 import MainLayout from './layouts/MainLayout'
 import Home from './pages/Home'
-// import NotFound from './pages/NotFound'
-// import Cart from './pages/Cart'
-// import FullPizza from './pages/FullPizza'
+
 const Cart = React.lazy(() => import(/*webpackChunkName: "Cart" */'./pages/Cart'))
 const FullPizza = React.lazy(() => import(/*webpackChunkName: "FullPizza" */'./pages/FullPizza'))
 const NotFound = React.lazy(() => import(/*webpackChunkName: "NotFound" */'./pages/NotFound'))

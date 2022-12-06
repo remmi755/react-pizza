@@ -1,8 +1,8 @@
 import React from 'react'
 
-import NotFoundBlock from '../components/NotFoundBlock'
+import { NotFoundBlock } from '../components'
 
-const NotFound: React.FC=()=> {
+const NotFound: React.FC = () => {
     return (
         <>
             <NotFoundBlock />
@@ -10,5 +10,4 @@ const NotFound: React.FC=()=> {
     )
 }
 
-export default NotFound;
-
+export default NotFound

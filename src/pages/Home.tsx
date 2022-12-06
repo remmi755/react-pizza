@@ -10,11 +10,7 @@ import { SearchPizzaParams } from '../redux/pizza/types'
 import { selectPizzaData } from '../redux/pizza/selectors'
 import { useAppDispatch } from '../redux/store'
 
-import Categories from '../components/Categories'
-import Sort from '../components/SortPopup'
-import PizzaBlock from '../components/PizzaBlock'
-import Skeleton from '../components/PizzaBlock/Skeleton'
-import Pagination from '../components/Pagination'
+import { Categories, Sort, PizzaBlock, Skeleton, Pagination } from '../components'
 import { listPopup } from '../components/SortPopup'
 
 const Home: React.FC = () => {
@@ -51,11 +47,10 @@ const Home: React.FC = () => {
                 sortProperty: sort.sortProperty,
                 currentPage,
             }
-
             const queryString = qs.stringify(params, { skipNulls: true })
-
             navigate(`?${queryString}`)
         }
+
         if (!window.location.search) {
             dispatch(fetchPizzas({} as SearchPizzaParams))
         }
@@ -88,7 +83,7 @@ const Home: React.FC = () => {
         isSearch.current = false
     }, [categoryId, sort.sortProperty, searchValue, currentPage])
 
-    const pizzas = items.map((obj: any, index: number) => <PizzaBlock key={obj.id} {...obj} />)
+    const pizzas = items.map((obj: any) => <PizzaBlock key={obj.id} {...obj} />)
 
     const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index} />)
 

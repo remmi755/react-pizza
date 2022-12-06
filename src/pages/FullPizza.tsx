@@ -31,11 +31,11 @@ const FullPizza: React.FC = () => {
     }
     return (
         <div className='container'>
-            <img src={pizza.imageUrl} />
+            <img src={pizza.imageUrl} alt='Pizza' />
             <h2>{pizza.title}</h2>
             <h4>{pizza.price} $</h4>
             <Link to='/'>
-                <button  className='button button--outline button--add go-back-btn'>
+                <button className='button button--outline button--add go-back-btn'>
                     <span>Назад</span>
                 </button>
             </Link>

@@ -3,21 +3,28 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { addItem } from '../../redux/cart/slice'
-import {selectCartItemById} from '../../redux/cart/selectors'
+import { selectCartItemById } from '../../redux/cart/selectors'
 import { CartItem } from '../../redux/cart/types'
 
 const typeNames = ['тонкое', 'традиционное']
 
 type PizzaBlockProps = {
-    id: string;
-    title: string;
-    price: number;
-    imageUrl: string;
-    sizes: number[];
-    types: number[];
+    id: string
+    title: string
+    price: number
+    imageUrl: string
+    sizes: number[]
+    types: number[]
 }
 
-const PizzaBlock: React.FC<PizzaBlockProps> = ({ id, title, price, imageUrl, sizes, types }) => {
+export const PizzaBlock: React.FC<PizzaBlockProps> = ({
+    id,
+    title,
+    price,
+    imageUrl,
+    sizes,
+    types,
+}) => {
     const dispatch = useDispatch()
     const cartItem = useSelector(selectCartItemById(id))
 
@@ -34,7 +41,7 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({ id, title, price, imageUrl, siz
             imageUrl,
             type: typeNames[activeType],
             size: sizes[activeSize],
-            count: 0
+            count: 0,
         }
 
         dispatch(addItem(item))
@@ -44,9 +51,9 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({ id, title, price, imageUrl, siz
         <div className='pizza-block-wrapper'>
             <div className='pizza-block'>
                 <Link to={`/pizza/${id}`} key={id}>
-                <img className='pizza-block__image' src={imageUrl} alt='Pizza' />
-                <h4 className='pizza-block__title'>{title}</h4>
-                    </Link >
+                    <img className='pizza-block__image' src={imageUrl} alt='Pizza' />
+                    <h4 className='pizza-block__title'>{title}</h4>
+                </Link>
                 <div className='pizza-block__selector'>
                     <ul>
                         {types.map((type, index) => (
@@ -94,5 +101,3 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({ id, title, price, imageUrl, siz
         </div>
     )
 }
-
-export default PizzaBlock
