@@ -1,3 +1,7 @@
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=40&duration=4000&pause=1000&width=435&height=76&lines=React-pizza)](https://git.io/typing-svg)
+
+![](https://github.com/Opzalas/CMPG-323-Overview---33448809/blob/main/branching.png)
+
 Полный стек:
 - ReactJS 18
 - TypeScript
