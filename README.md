@@ -2,9 +2,9 @@
 
 ![](https://github.com/remmi755/react-pizza/blob/master/Screenshot_10.jpg)
 
-<h2>Full stack:</h2>
+<h1>Full stack:</h1>
 
-<h3>ReactJS18</h3>
+<h3>React JS18</h3>
 <h3>Typescript</h3>
 <h3>Redux Toolkit (data/pizza storage)</h3>
 <h3>React Router v6 (navigation)</h3>
