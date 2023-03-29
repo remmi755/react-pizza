@@ -2,16 +2,19 @@
 
 ![](https://github.com/remmi755/react-pizza/blob/master/Screenshot_10.jpg)
 
-Полный стек:
-- ReactJS 18
-- TypeScript
-- Redux Toolkit (хранение данных / пицц)
-- React Router v6 (навигация)
-- Axios + Fetch (отправка запроса на бэкенд)
-- React Hooks (хуки)
-- Prettier (форматирование кода)
-- CSS-Modules / SCSS (стилизация)
-- React Content Loader (скелетон)
-- React Pagination (пагинация)
-- Lodash.Debounce
-- Code Splitting, React Loadable, useWhyDidYouUpdate
+<h2>Full stack:</h2>
+
+<h3>ReactJS18</h3>
+<h3>Typescript</h3>
+<h3>Redux Toolkit (data/pizza storage)</h3>
+<h3>React Router v6 (navigation)</h3>
+<h3>Axios + Fetch (sending a request to the backend)</h3>
+<h3>React Hooks</h3>
+<h3>Prettier (code formatting)</h3>
+<h3>CSS-Modules / SCSS (stylization)</h3>
+<h3>React Content Loader (skeleton)</h3>
+<h3>React Pagination (pagination)</h3>
+<h3>Lodash.Debounce</h3>
+<h3>Code Splitting, React Loadable, useWhyDidYouUpdate</h3>
+
+
